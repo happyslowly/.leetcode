@@ -20,4 +20,9 @@ public class ConclusionTest {
                 instance.findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1}));
     }
 
+    @Test
+    public void testThirdMax() {
+        Assert.assertEquals(1, instance.thirdMax(new int[]{2, 2, 3, 1}));
+    }
+
 }

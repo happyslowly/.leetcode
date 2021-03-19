@@ -13,4 +13,17 @@ public class InPlaceTest {
                 instance.replaceElements(new int[]{17, 18, 5, 4, 6, 1}));
     }
 
+    @Test
+    public void testSortArrayByParity() {
+        Assert.assertArrayEquals(new int[]{2, 4, 6, 1, 3},
+                instance.sortArrayByParity(new int[]{3, 1, 2, 4, 6}));
+    }
+
+    @Test
+    public void testMoveZeros() {
+        int[] a = new int[]{0, 1, 0, 3, 12};
+        instance.moveZeroes(a);
+        Assert.assertArrayEquals(new int[]{1, 3, 12, 0, 0}, a);
+    }
+
 }
