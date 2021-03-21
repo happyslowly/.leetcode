@@ -5,12 +5,17 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 
 @Data
-@Accessors(fluent = true)
 public class ListNode {
-    int val;
-    @ToString.Exclude ListNode next;
+    public int val;
 
-    public ListNode() {}
+    @ToString.Exclude
+    public ListNode prev;
+
+    @ToString.Exclude
+    public ListNode next;
+
+    public ListNode() {
+    }
 
     public ListNode(int val) {
         this.val = val;
