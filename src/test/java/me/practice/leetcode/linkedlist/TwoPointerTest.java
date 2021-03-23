@@ -9,7 +9,7 @@ public class TwoPointerTest {
     private final TwoPointer instance = new TwoPointer();
 
     @Test
-    public void testHasCycle() {
+    public void hasCycle() {
         LinkedList list = LinkedList.from(new int[]{3, 2, 0, -4});
         ListNode p = list.head().next;
         ListNode q = list.tail();
@@ -19,7 +19,7 @@ public class TwoPointerTest {
     }
 
     @Test
-    public void testDetectCycle() {
+    public void detectCycle() {
         LinkedList list = LinkedList.from(new int[]{3, 2, 0, -4});
         ListNode p = list.head().next;
         ListNode q = list.tail();
@@ -29,7 +29,7 @@ public class TwoPointerTest {
     }
 
     @Test
-    public void testGetIntersectionNode() {
+    public void getIntersectionNode() {
         LinkedList list1 = LinkedList.from(new int[]{4, 1});
         LinkedList list2 = LinkedList.from(new int[]{5, 6, 1});
         LinkedList list3 = LinkedList.from(new int[]{8, 4, 5});

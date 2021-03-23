@@ -9,7 +9,7 @@ public class ConclusionTest {
     private final Conclusion instance = new Conclusion();
 
     @Test
-    public void testMergeTwoLists() {
+    public void mergeTwoLists() {
         LinkedList list1 = LinkedList.from(new int[]{1, 2, 4});
         LinkedList list2 = LinkedList.from(new int[]{1, 3, 4});
         ListNode p = instance.mergeTwoLists(list1.head(), list2.head());
@@ -17,7 +17,7 @@ public class ConclusionTest {
     }
 
     @Test
-    public void testAddTwoNumbers() {
+    public void addTwoNumbers() {
         LinkedList list1 = LinkedList.from(new int[]{2, 4, 3});
         LinkedList list2 = LinkedList.from(new int[]{5, 6, 4});
         ListNode p = instance.addTwoNumbers(list1.head(), list2.head());

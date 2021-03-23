@@ -7,14 +7,14 @@ public class InsertingTest {
     private final Inserting instance = new Inserting();
 
     @Test
-    public void testDuplicateZeros() {
+    public void duplicateZeros() {
         int[] arr = new int[]{1, 0, 2, 3, 0, 4, 5, 0};
         instance.duplicateZeros(arr);
         Assert.assertArrayEquals(new int[]{1, 0, 0, 2, 3, 0, 0, 4}, arr);
     }
 
     @Test
-    public void testMerge() {
+    public void merge() {
         int[] nums1 = new int[]{1, 2, 3, 0, 0, 0};
         int[] nums2 = new int[]{2, 5, 6};
 

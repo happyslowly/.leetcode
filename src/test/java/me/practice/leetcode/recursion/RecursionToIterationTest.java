@@ -9,7 +9,7 @@ public class RecursionToIterationTest {
     private final RecursionToIteration instance = new RecursionToIteration();
 
     @Test
-    public void testGenerateParenthesis() {
+    public void generateParenthesis() {
         Assert.assertEquals(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()"),
                 instance.generateParenthesis(3));
     }

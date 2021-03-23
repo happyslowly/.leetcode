@@ -7,12 +7,12 @@ public class SearchingTest {
     private final Searching instance = new Searching();
 
     @Test
-    public void testCheckIfExist() {
+    public void checkIfExist() {
         Assert.assertTrue(instance.checkIfExist(new int[]{10, 2, 5, 3}));
     }
 
     @Test
-    public void testValidMountainArray() {
+    public void validMountainArray() {
         Assert.assertTrue(instance.validMountainArray(new int[]{0, 3, 2, 1}));
     }
 }

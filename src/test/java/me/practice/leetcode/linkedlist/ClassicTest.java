@@ -10,7 +10,7 @@ public class ClassicTest {
     private final Classic instance = new Classic();
 
     @Test
-    public void testReverseList() {
+    public void reverseList() {
         LinkedList list = LinkedList.from(new int[]{1, 2, 3, 4, 5});
         ListNode p = instance.reverseList(list.head());
         LinkedList list2 = LinkedList.from(p);
@@ -18,7 +18,7 @@ public class ClassicTest {
     }
 
     @Test
-    public void testRemoveElements() {
+    public void removeElements() {
         LinkedList list = LinkedList.from(new int[]{3, 2, 3, 4, 5});
         ListNode p = instance.removeElements(list.head(), 3);
 
@@ -27,7 +27,7 @@ public class ClassicTest {
     }
 
     @Test
-    public void testOddEvenList() {
+    public void oddEvenList() {
         LinkedList list = LinkedList.from(new int[]{1, 2, 3, 4, 5});
         ListNode p = instance.oddEvenList(list.head());
         LinkedList list2 = LinkedList.from(p);
@@ -35,7 +35,7 @@ public class ClassicTest {
     }
 
     @Test
-    public void testIsPalindrome() {
+    public void isPalindrome() {
         LinkedList list = LinkedList.from(new int[]{1, 2, 3, 3, 2, 1});
         Assert.assertTrue(instance.isPalindrome(list.head()));
     }
