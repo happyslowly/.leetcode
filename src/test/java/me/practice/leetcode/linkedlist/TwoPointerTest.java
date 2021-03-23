@@ -1,7 +1,7 @@
 package me.practice.leetcode.linkedlist;
 
 import me.practice.leetcode.ds.LinkedList;
-import me.practice.leetcode.ds.ListNode;
+import me.practice.leetcode.ds.LinkedList.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -45,7 +45,7 @@ public class TwoPointerTest {
     public void testRemoveNthFromEnd() {
         LinkedList list = LinkedList.from(new int[]{1, 2, 3, 4, 5});
 
-        instance.removeNthFromEnd(list.head(), 2);
-        System.out.println(list);
+        ListNode p = instance.removeNthFromEnd(list.head(), 2);
+        System.out.println(LinkedList.from(p));
     }
 }

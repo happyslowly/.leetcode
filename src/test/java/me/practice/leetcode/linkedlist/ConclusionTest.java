@@ -1,12 +1,20 @@
 package me.practice.leetcode.linkedlist;
 
 import me.practice.leetcode.ds.LinkedList;
-import me.practice.leetcode.ds.ListNode;
+import me.practice.leetcode.ds.LinkedList.ListNode;
 import org.junit.Test;
 
 public class ConclusionTest {
 
     private final Conclusion instance = new Conclusion();
+
+    @Test
+    public void testMergeTwoLists() {
+        LinkedList list1 = LinkedList.from(new int[]{1, 2, 4});
+        LinkedList list2 = LinkedList.from(new int[]{1, 3, 4});
+        ListNode p = instance.mergeTwoLists(list1.head(), list2.head());
+        System.out.println(LinkedList.from(p));
+    }
 
     @Test
     public void testAddTwoNumbers() {

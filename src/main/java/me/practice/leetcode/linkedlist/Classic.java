@@ -1,6 +1,6 @@
 package me.practice.leetcode.linkedlist;
 
-import me.practice.leetcode.ds.ListNode;
+import me.practice.leetcode.ds.LinkedList.ListNode;
 
 import java.util.Stack;
 

@@ -1,7 +1,7 @@
 package me.practice.leetcode.linkedlist;
 
 import me.practice.leetcode.ds.LinkedList;
-import me.practice.leetcode.ds.ListNode;
+import me.practice.leetcode.ds.LinkedList.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 
